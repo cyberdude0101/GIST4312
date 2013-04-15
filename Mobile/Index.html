@@ -72,7 +72,7 @@
       });
 
       var imageParameters = new esri.layers.ImageParameters();
-      imageParameters.layerIds = [0];
+      imageParameters.layerIds = [0,1];
       imageParameters.layerOption = esri.layers.ImageParameters.LAYER_OPTION_SHOW;
       var soilDynamicLayer = new esri.layers.ArcGISDynamicMapServiceLayer("http://mapserver.gis.ttu.edu/ArcGIS/rest/services/GPA_US_Demographics_Population2010/MapServer",{"opacity":.50,imageParameters:imageParameters});
       map.addLayer(soilDynamicLayer);
